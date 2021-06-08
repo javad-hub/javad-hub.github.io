@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block title%}<title>Paint Detail</title>{% endblock title%}
+
+{% block content%}
+<link rel="stylesheet" href="{% static 'paint_detail.css'%}">
+<header></header>
+<div>
+    <body>
+        <li>
+            <img src="{{paint.image.url}}" alt="" class="align-center medium">
+        </li>
+        <li class="align-center">Name:{{paint.name}}</li>
+        <li class="align-left">Detail:{{paint.detail}}</li>
+        <li class="align-right">Date:{{paint.date}}</li>
+    </body>
+</div>
+{% endblock content%}

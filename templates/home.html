@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title%}<title>Home</title>{% endblock title%}
+{% load static%}
+{% block content%}
+<link rel="stylesheet" href="{% static 'home.css'%}">
+<header>
+    {% if user.is_authenticated%}
+    <p class="p"> ! {{user.username}}    سلام </p>
+    {% else%}
+    <p class="p1">.شما به سایت وارد نشده اید</p>
+    {% endif%}
+    <p class="par">{  سلام به همگی!! خوش آمدین به سایت من}</p>
+    <br>
+    <p class="parg">من یک نقاش کوچک هستم</p>
+    <br>
+    <p class="parga">{میخواهم تجربیات خودم را در مورد نقاشی با شما در میان بگذارم}</p>
+    <img src="{% static '9.jpg'%}"width="200px" height="300px" class="owl" alt="">
+</header>
+<body>
+    <video src="{% static 'video/entery.mp4'%}" autoplay class="medium" width="600" height="700"></video>
+</body>
+{% endblock content%}

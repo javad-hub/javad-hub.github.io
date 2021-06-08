@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+{% block title%}<title>Video</title>{% endblock title%}
+{% load static%}
+{% block content%}
+<link rel="stylesheet" href="{% static 'video.css'%}">
+<header>
+    <h1 class="h1"><strong>Videos</strong></h1></header>
+    <p class="par">در این بخش آموزش نقاشی یا آنباکس لوازم التحریر را خواهید دید</p>
+<body>
+    <video src="{% static 'video/2.mp4'%}" controls class="video1" width="200" height="200"></video>
+    <figcaption class="caption1">این یک ویدیو</figcaption>
+    <video src="{% static 'video/3.mp4'%}" controls class="video2" width="200" height="200"></video>
+    <figcaption class="caption2">اینم یک ویدیو</figcaption>
+</body>
+{% endblock content%}

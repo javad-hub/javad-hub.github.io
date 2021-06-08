@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block title%}<title>About</title>{% endblock title%}
+
+{% block content%}
+<link rel="stylesheet" href="{% static 'about.css'%}">
+<h1>About</h1>
+<p class="par">در این بخش توضیحاتی در مورد بنده و نقاشی هایم خواهید دید</p>
+<p class="parg">.من بهار هستم.12 ساله هستم ، به طور قطعی 2 سال هست که نقاشی میکشم.من با آبرنگ،گواش،مدادرنگی،مداد سیاه و پاستل روغنی نقاشی میکنم</p>
+<body>
+    <div>
+    <img src="{% static '14.jpg'%}" width="200" height="200" class="img1"alt="">
+    <figcaption class="par1">گواش 12 رنگه ی پارس</figcaption>
+    </div>
+</body>
+{% endblock content%}

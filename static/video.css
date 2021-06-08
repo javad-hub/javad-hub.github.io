@@ -1,0 +1,45 @@
+body {
+    background-image:url(11.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.par {
+    font-size:40px;
+    margin-left:14em;
+    color:orchid;
+    border-style:groove;
+    width:850px;
+}
+
+.h1 {
+    color:lightgreen;
+}
+
+.video1 {
+    border-style:dotted;
+    width:400px;
+    height:300px;
+}
+
+.video2 {
+    border-style:dotted;
+    width:400px;
+    height:300px;
+    margin-left: 94em;
+    position:absolute;
+    top:310px;
+}
+.caption1 {
+    margin-left: 8em;
+    color:yellow;
+    font-size: large;
+}
+
+.caption2 {
+    margin-left: 94em;
+    position:absolute;
+    top:620px;
+    color:yellow;
+    font-size: large;
+}

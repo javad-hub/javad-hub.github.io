@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block title%}<title>Comment</title>{% endblock title%}
+{% load crispy_forms_tags%}
+{% block content%}
+<link rel="stylesheet" href="{% static 'comment.css'%}">
+<h1>Comments</h1>
+<br/>
+<p class="par">{در این بخش گفت و گو های یکدیگر را به اشتراک خواهیم گذاشت}</p>
+<br/>
+<p class="parg">سوال ، جمله و هر چه که خواستین میتوانید بگید</p>
+{% for comment in paint.comments.all %}
+<li>
+<strong>{{comment.name}}</strong>
+<hr>
+<br/>
+<p>{{comment.date}}</p>
+<hr>
+<p>{{comment.comment}}</p>
+</li>
+{% endfor %}
+
+<form class="form" action="" method="post">
+    {% csrf_token%}
+    {{ form|crispy}}
+    <input type="submit" class"input" value"Submit">
+</form>
+
+{% endblock content%}

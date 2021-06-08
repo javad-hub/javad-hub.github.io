@@ -1,0 +1,28 @@
+body {
+    background-image:url(6.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+.par {
+    margin-left:20em;
+    font-size:xx-large;
+    color:darkred;
+}
+
+.parg {
+    font-size:xx-large;
+    margin-left:23em;
+    color:lightseagreen;
+}
+
+.form {
+    position:absolute;
+    top:200px;
+}
+
+.input {
+    background-color: whitesmoke;
+    color:slategray;
+    text-decoration: none;
+}
+.input:hover {background-color:darkgreen;}

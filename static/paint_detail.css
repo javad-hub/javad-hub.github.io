@@ -1,0 +1,27 @@
+img.align-center {
+    display: block;
+    margin: 0px auto;
+}
+img.medium {
+    width:300px;
+    height:300px;
+}
+li.align-center {
+    color:tomato;
+    text-shadow: 2px 2px 7px #156;
+    display: block;
+    margin-left: 58em;
+}
+li.align-left {
+    display: block;
+    margin-left:53em;
+    color:yellow;
+}
+li.align-right {
+    display: block;
+    margin-left:53em;
+    color:yellow;
+}
+body {
+    background-image:url(10.jpg);
+}

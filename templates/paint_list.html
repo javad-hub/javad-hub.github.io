@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block title%}<title>Paints List</title>{% endblock title%}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'paint_list.css'%}">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0" >
+<header></header>
+<p class="par">در این بخش</p>
+<p class="parg">کار های من را</p>
+<p class="parga">خواهید دید</p>
+<div class="container">
+    <ul>
+        {% for paint in object_list%}
+       <tr>
+           <td><img src="{{paint.image.url}}" class="horizantally" width="200" height"100" alt=""></td>
+           <figcaption class="color"><a href="{% url 'detail' paint.pk%}" class="btn">{{paint.name}}</a></figcaption>
+           <figcaption class="color">{{paint.date}}</figcaption>
+           <br>
+           <div class="color">
+           <p>Like it or not?
+               <form action="{% url 'like_paint' paint.pk%}" method="POST">
+                   {%csrf_token%}
+                   {% if liked %}
+                   <button type="submit" name="paint_id" value="{{paint.id}}">Unlike</button>
+                {% else %}
+                   <button class="like" type="submit" name="paint_id" value="{{paint.id}}">Like</button>
+                   <hr>
+               </form>
+               {% endif %}
+           </p>
+           </div>
+        </tr>
+        {% endfor%}
+    </ul>
+</div>
+{% endblock content%}

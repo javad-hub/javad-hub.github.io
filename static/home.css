@@ -1,0 +1,61 @@
+video.medium {
+    margin-left:74em;
+    padding-top:0px;
+    padding-bottom: 0px;
+    border-style:dashed;
+    border-color:snow;
+    margin-top:0em;
+    height:350px;
+    position: absolute;
+    top: 390px;
+    right: 16px;
+}
+body {
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.p {
+    color:turquoise;
+    font-family:fantasy;
+    margin-top:60px;
+    border-style:solid;
+    padding:5px;
+    margin-left: 112em;
+    border-color:orange;
+}
+
+.p1 {
+    color:turquoise;
+    font-family:fantasy;
+    margin-top:60px;
+    border-style:solid;
+    padding:5px;
+    margin-left: 108em;
+    border-color:orange;
+}
+
+.par {
+    margin-left:12em;
+    color:palevioletred;
+    font-size:xxx-large;
+}
+
+.parg {
+    color:lightsalmon;
+    font-size:35px;
+    margin-left:13em;
+}
+
+.parga {
+    color:darkslateblue;
+    font-size:31px;
+}
+
+.owl {
+    position: absolute;
+    top: 150px;
+    left: 16px;
+    border-radius:20%;
+}

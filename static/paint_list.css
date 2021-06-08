@@ -1,0 +1,60 @@
+div.container {
+    min-width:450px;
+    max-width:650px;
+    text-align: left;
+    padding: 5px;
+    margin: 0px;
+    border-style: dotted;
+    border-color:ghostwhite;
+    margin-left:40em;
+}
+body {
+    background-image: url(3.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+figcaption.color {
+    color:lightcoral;
+}
+div.color {
+    color:lightcoral;
+}
+.horizantally {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 3%;
+}
+.btn {
+    background-color:lightpink;
+    padding:1px;
+    border:none;
+    font-size:30px;
+    color:purple;
+}
+.btn:hover {background-color:slateblue;}
+
+.par {
+    color:goldenrod;
+    font-size:xx-large;
+    margin-left:55em;
+}
+
+.parg {
+    color:goldenrod;
+    font-size:xx-large;
+    margin-left:50em;
+}
+
+.parga {
+    color:goldenrod;
+    font-size:xx-large;
+    margin-left:45em;
+}
+
+.like {
+    background-color:lightblue;
+    text-decoration: none;
+}
+
+.like:hover {background-color:blue;color:khaki;}
